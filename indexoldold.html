@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>hootis's site</title>
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="header">
+                <div style="animation:slide-right-exactly-200-pixels 0.5s ease-in-out;animation-delay:3s;animation-fill-mode:forwards;">
+                    welcome to my site
+                    <img src="hi-wave.gif" alt="silly waving guy gif" style="width:200px;height:48px;animation:fade 3s ease-in-out;animation-fill-mode:forwards;">
+                </div>
+        </div>
+
+        <div class="paragraph">
+            i make code mods and software tools.
+        </div>
+
+        <div class="paragraph">
+            heres all the games ive made mods for:
+        </div>
+
+        <div class="list">
+            Rain World, Minecraft, Terraria, Sanabi, Rusted Moss, Terraria, Ultrakill, Core Keeper, Astroneer, Celeste, Risk of Rain 2
+        </div>
+    </div>
+  </body>
+
+  <style>
+    .background {
+        background-image: url("water.gif");
+  
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+  
+        height: 100%; 
+  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: black;
+        text-align: center;
+        color: white;
+        animation-fill-mode: forwards;
+        border: 5px slateblue;
+    }
+    .header {
+        font-size: 50px;
+        color: slateblue;
+        background-color: gr;
+        padding: 5%;
+        animation: slide-to-center 2s ease-in-out;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        transform: translate(-200%, 0%);
+    }
+    .paragraph {
+        font-size: large;
+        padding: 1%;
+        color: white;
+        animation: slide-to-center 2s ease-in-out;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        transform: translate(-200%, 0%);
+    }
+
+    .list {
+        color: white;
+        padding: 3%;
+        position: relative;
+        animation: slide-to-center 4s ease-in-out;
+        animation-delay: 5s;
+        font-size: 25px;
+        animation-fill-mode: forwards;
+        transform: translate(-200%, 0%);
+    }
+
+    @keyframes slide-to-center {
+        0% {transform: translate(-200%, 0); opacity: 0;}
+        80% {transform: translate(0%, 0); opacity: 25;}
+        100% {transform: translate(0%, 0); opacity: 100;}
+    }
+
+    @keyframes fade {
+        from {opacity: 100;}
+        to {opacity: 0;}
+    }
+
+    @keyframes slide-right-exactly-200-pixels {
+        from {transform: translate(0%, 0%);}
+        to {transform: translate(100px, 0%)}
+    }
+  </style>
+</html>
