@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>hootis's mods</title>
+    </head>
+
+    <body>
+        <div class="bg-image"></div>
+
+        <div class="main-container">
+            <div class="textbox">
+                this page is under construction :3
+            </div>
+        </div>
+    </body>
+
+    <style>
+        body {
+            font-size: larger;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            background-color: black;
+
+            justify-content: center;
+            align-items: center;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-image {
+            background-image: url(bg.gif);
+            height: 100vh;
+            width: 100%;
+            z-index: -1;
+            filter: blur(5rem);
+            -webkit-filter: blur(5rem);
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main-container {
+            top: 0px;
+            left: calc(15%);
+            height: 100%;
+            width: 70%;
+            background-color: black;
+            position: fixed;
+            padding: 0%;
+        }
+
+        .textbox {
+            --padding: 5%;
+            --bordersize: 5px;
+            border: 5px solid slateblue;
+            width: calc((100% - (var(--padding) * 2.1) - --bordersize));
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 5%;
+
+            border-image: linear-gradient(slateblue, rgba(0, 0, 0, 0)) 30;
+            border-width: var(--bordersize);
+            border-style: solid;
+        }
+    </style>
+</html>
